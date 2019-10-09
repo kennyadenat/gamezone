@@ -30,7 +30,7 @@ TextStyle hoursPlayedTextStyle = TextStyle(
 );
 
 TextStyle headingOneTextStyle = TextStyle(
-  fontSize: 20,
+  fontSize: 18,
   color: Colors.black,
   fontWeight: FontWeight.bold,
 );

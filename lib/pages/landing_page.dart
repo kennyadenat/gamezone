@@ -66,6 +66,7 @@ class Landingpage extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 10),
                   child: Column(
+                    // This shows where the items in a column ought to start
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Padding(

@@ -42,7 +42,7 @@ class NewGameWidget extends StatelessWidget {
                         textAlign: TextAlign.center,
                         text: TextSpan(
                           children: [
-                            TextSpan(text: "NEW GAME", style: newGameTextStyle),
+                            TextSpan(text: "LATEST", style: newGameTextStyle),
                             TextSpan(text: "\n"),
                             TextSpan(
                                 text: newGamesList.gameTitle,
@@ -69,7 +69,7 @@ class NewGameWidget extends StatelessWidget {
                             ),
                           ),
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),

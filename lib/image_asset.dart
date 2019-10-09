@@ -12,9 +12,11 @@ const String game_dead_cells = "assets/games/dead_cells.jpg";
 const String game_stardew = "assets/games/stardew_valley.jpeg";
 const String game_no_mans_sky = "assets/games/no_mans_sky.jpeg";
 const String game_sekiro = "assets/games/sekiro.png";
+
 const String game_fortnite = "assets/games/fortnite.jpg";
 const String game_apex = "assets/games/apex_legends.jpg";
 const String game_pubg = "assets/games/pubg.png";
+
 const String call_duty = "assets/games/call_duty.jpg";
 const String nathan_drake = "assets/games/nathan_drake.jpg";
 const String last_of_us = "assets/games/last_of_us.jpg";

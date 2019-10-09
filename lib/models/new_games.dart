@@ -14,3 +14,11 @@ final newGamesList = [
   NewGamesList(
       gameTitle: 'THE LAST OF US: No Where to Go', imagePath: last_of_us),
 ];
+
+final popularFriend = [
+  game_fortnite,
+  game_apex,
+  game_pubg,
+  game_stardew,
+  game_dead_cells
+];
