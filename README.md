@@ -1,6 +1,6 @@
-# posegal
+# Gamezone. .
 
-A new Flutter project.
+My First flutter project. Hoping to start a flutter tutorial series soon. .  Stay connected. .
 
 ## Getting Started
 
