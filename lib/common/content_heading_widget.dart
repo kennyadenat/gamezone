@@ -10,7 +10,16 @@ class ContentHeadingWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 20),
-      child: Text(heading, style: headingOneTextStyle),
+      child: Row(
+        children: <Widget>[
+          Text(heading, style: headingOneTextStyle),
+          Spacer(),
+          Text(
+            'View All(24)',
+            style: viewAllTextStyle,
+          )
+        ],
+      ),
     );
   }
 }

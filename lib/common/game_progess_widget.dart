@@ -16,6 +16,7 @@ class _GameProgressWidgetState extends State<GameProgressWidget>
   AnimationController controller;
   Animation<double> progressAnimation;
 
+
   @override
   void initState() {
     super.initState();

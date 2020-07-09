@@ -20,3 +20,16 @@ const String game_pubg = "assets/games/pubg.png";
 const String call_duty = "assets/games/call_duty.jpg";
 const String nathan_drake = "assets/games/nathan_drake.jpg";
 const String last_of_us = "assets/games/last_of_us.jpg";
+
+// shops
+const String apple = "assets/shops/apple.jpg";
+const String camping = "assets/shops/camping.jpg";
+const String lebon = "assets/shops/lebon.jpg";
+const String london = "assets/shops/london.jpg";
+const String luis = "assets/shops/luis.jpg";
+const String macy = "assets/shops/macy.jpg";
+const String paris = "assets/shops/paris.jpg";
+const String tulors = "assets/shops/tulors.jpg";
+
+const String welcome = "assets/images/welcome.png";
+const String qr = "assets/images/qr.png";

@@ -23,6 +23,36 @@ TextStyle hoursPlayedLabelTextStyle = TextStyle(
   fontWeight: FontWeight.bold,
 );
 
+TextStyle dropDownMenuLabel = TextStyle(
+  fontSize: 16,
+  color: Colors.white,
+  fontWeight: FontWeight.bold,
+);
+
+TextStyle dropDownMenuText = TextStyle(
+  fontSize: 16,
+  color: Colors.black,
+  fontWeight: FontWeight.bold,
+);
+
+TextStyle shopCardTitle = TextStyle(
+  fontSize: 18,
+  color: Colors.black,
+  fontWeight: FontWeight.bold,
+);
+
+TextStyle shopCardDiscount = TextStyle(
+  fontSize: 18,
+  color: Colors.white,
+  fontWeight: FontWeight.bold,
+);
+
+TextStyle shopCardInfo = TextStyle(
+  fontSize: 14,
+  color: Colors.black,
+  fontWeight: FontWeight.w500,
+);
+
 TextStyle hoursPlayedTextStyle = TextStyle(
   fontSize: 32,
   color: secondaryTextColor,
@@ -32,6 +62,18 @@ TextStyle hoursPlayedTextStyle = TextStyle(
 TextStyle headingOneTextStyle = TextStyle(
   fontSize: 18,
   color: Colors.black,
+  fontWeight: FontWeight.bold,
+);
+
+TextStyle viewAllTextStyle = TextStyle(
+  fontSize: 12,
+  color: Colors.amber[500],
+  fontWeight: FontWeight.bold,
+);
+
+TextStyle headingSearchTextStyle = TextStyle(
+  fontSize: 22,
+  color: Colors.white,
   fontWeight: FontWeight.bold,
 );
 

@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:posegal/common/search_back_nav.dart';
-import 'package:posegal/common/search_bar_widget.dart';
 import 'package:posegal/models/new_games.dart';
 import 'package:posegal/styleguide/colors.dart';
 import 'package:posegal/styleguide/text_styles.dart';
-
-import '../image_asset.dart';
 
 class NewGameWidget extends StatelessWidget {
   final NewGamesList newGamesList;
@@ -21,6 +18,10 @@ class NewGameWidget extends StatelessWidget {
             height: 400,
             fit: BoxFit.fitHeight,
           ),
+          SizedBox(
+            height: 60,
+          ),
+          SearchBackWidget(),
           Container(
             color: Colors.grey.withOpacity(0.2),
           ),
@@ -31,7 +32,7 @@ class NewGameWidget extends StatelessWidget {
               ),
               // This is for the SearchBarWidget
               // SearchBarWidget(),
-              SearchBackWidget(),
+
               Spacer(),
               Center(
                 child: Padding(

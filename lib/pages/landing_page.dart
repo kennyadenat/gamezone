@@ -1,8 +1,10 @@
+import 'package:after_layout/after_layout.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:posegal/common/content_heading_widget.dart';
 import 'package:posegal/common/last_played_game_tile_widget.dart';
 import 'package:posegal/common/rounded_image_widget.dart';
+import 'package:posegal/common/tap_bottom_widget.dart';
 import 'package:posegal/models/friends.dart';
 import 'package:posegal/models/last_played_game.dart';
 import 'package:posegal/pages/secondary_page.dart';
@@ -11,7 +13,14 @@ import 'package:posegal/styleguide/text_styles.dart';
 
 import '../image_asset.dart';
 
-class Landingpage extends StatelessWidget {
+class Landingpage extends StatefulWidget {
+  @override
+  _LandingpageState createState() => _LandingpageState();
+}
+
+class _LandingpageState extends State<Landingpage> {
+  double _bottomSheetBottomPosition = -400;
+  bool isCollapsed = false;
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;
@@ -23,15 +32,16 @@ class Landingpage extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           Transform.translate(
-              offset: Offset(screenWidth * 0.5, 10.0),
-              child: Transform.rotate(
-                angle: -0.1,
-                child: SvgPicture.asset(
-                  logo2,
-                  height: logoHeight,
-                  color: logoTintColor,
-                ),
-              )),
+            offset: Offset(screenWidth * 0.5, 10.0),
+            child: Transform.rotate(
+              angle: -0.1,
+              child: SvgPicture.asset(
+                logo2,
+                height: logoHeight,
+                color: logoTintColor,
+              ),
+            ),
+          ),
           SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -159,7 +169,8 @@ class Landingpage extends StatelessWidget {
                 ),
               ],
             ),
-          )
+          ),
+          TapBottomWidget()
         ],
       ),
     );
