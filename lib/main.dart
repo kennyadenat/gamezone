@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         fontFamily: 'Oxygen',
       ),
-      home: HotelLanding()
-      //home: Landingpage(),
+      //home: HotelLanding()
+      home: Landingpage(),
       // home: PlaneTicketPage(),
     );
   }

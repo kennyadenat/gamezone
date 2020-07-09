@@ -5,6 +5,9 @@ import 'package:posegal/styleguide/colors.dart';
 TextStyle userNameTextStyle = TextStyle(
     fontSize: 32, color: primaryTextColor, fontWeight: FontWeight.w500);
 
+TextStyle welcomeTextStyle = TextStyle(
+    fontSize: 26, color: primaryTextColor, fontWeight: FontWeight.w500);
+
 TextStyle rankTextStyle =
     TextStyle(fontSize: 15, color: Colors.white, fontWeight: FontWeight.bold);
 
@@ -86,4 +89,9 @@ TextStyle headingTwoTextStyle = TextStyle(
 TextStyle bodyTextStyle = TextStyle(
   fontSize: 14,
   color: Colors.grey.shade600,
+);
+
+TextStyle amountTextStyle = TextStyle(
+  fontSize: 14,
+  color: Colors.black,
 );

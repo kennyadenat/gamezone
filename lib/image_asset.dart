@@ -1,6 +1,6 @@
 const String logo = "assets/images/stadia_logo.svg";
 
-const String player1 = "assets/players/jon_snow.jpeg";
+const String player1 = "assets/players/kennys.jpeg";
 const String friend_jeenie = "assets/players/jeenie_duhe.jpg";
 const String friend_gena = "assets/players/gena_sedgwick.jpg";
 const String friend_michelle = "assets/players/michelle_chong.jpg";
@@ -30,6 +30,16 @@ const String luis = "assets/shops/luis.jpg";
 const String macy = "assets/shops/macy.jpg";
 const String paris = "assets/shops/paris.jpg";
 const String tulors = "assets/shops/tulors.jpg";
+
+
+// Stocks
+
+const String tsla = "assets/stocks/tesla.png";
+const String mic = "assets/stocks/microsoft.png";
+const String fb = "assets/stocks/facebook.png";
+const String twitter = "assets/stocks/twitter.png";
+const String nike = "assets/stocks/nike.png";
+const String amazon = "assets/stocks/amazon.png";
 
 const String welcome = "assets/images/welcome.png";
 const String qr = "assets/images/qr.png";

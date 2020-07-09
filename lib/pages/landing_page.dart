@@ -7,6 +7,7 @@ import 'package:posegal/common/rounded_image_widget.dart';
 import 'package:posegal/common/tap_bottom_widget.dart';
 import 'package:posegal/models/friends.dart';
 import 'package:posegal/models/last_played_game.dart';
+import 'package:posegal/models/stocks.dart';
 import 'package:posegal/pages/secondary_page.dart';
 import 'package:posegal/styleguide/colors.dart';
 import 'package:posegal/styleguide/text_styles.dart';
@@ -96,11 +97,11 @@ class _LandingpageState extends State<Landingpage> {
                                 text: TextSpan(
                                   children: [
                                     TextSpan(
-                                        text: 'Hello',
-                                        style: userNameTextStyle),
+                                        text: 'Welcome',
+                                        style: welcomeTextStyle),
                                     TextSpan(text: '\n'),
                                     TextSpan(
-                                        text: 'Jon Snow',
+                                        text: 'Adelugba',
                                         style: userNameTextStyle)
                                   ],
                                 ),
@@ -128,25 +129,25 @@ class _LandingpageState extends State<Landingpage> {
                                     Row(
                                       children: <Widget>[
                                         Text(
-                                          'HOURS PLAYED',
+                                          'PORTFOLIO VALUE',
                                           style: hoursPlayedLabelTextStyle,
                                         )
                                       ],
                                     ),
                                     SizedBox(height: 7),
-                                    Text("297 Hours",
+                                    Text("\$43,578",
                                         style: hoursPlayedTextStyle)
                                   ],
                                 )),
                           )),
-                      ContentHeadingWidget(heading: 'Last Played Game'),
-                      for (var i = 0; i < lastPlayedGames.length; i++)
+                      ContentHeadingWidget(heading: 'Stock Watchlist'),
+                      for (var i = 0; i < stocks.length; i++)
                         LastPlayedGameTile(
-                          lastPlayedGame: lastPlayedGames[i],
+                          lastPlayedGame: stocks[i],
                           screenWidth: screenWidth,
-                          gameProgress: lastPlayedGames[i].gameProgress,
+                          gameProgress: stocks[i].gameProgress,
                         ),
-                      ContentHeadingWidget(heading: 'Friend List'),
+                      ContentHeadingWidget(heading: 'Top Traders'),
                     ],
                   ),
                 ),
@@ -170,7 +171,7 @@ class _LandingpageState extends State<Landingpage> {
               ],
             ),
           ),
-          TapBottomWidget()
+        //  TapBottomWidget()
         ],
       ),
     );

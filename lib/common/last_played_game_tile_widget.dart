@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:posegal/models/last_played_game.dart';
+import 'package:posegal/models/stocks.dart';
 import 'package:posegal/styleguide/text_styles.dart';
 
 import 'game_progess_widget.dart';
 
 class LastPlayedGameTile extends StatelessWidget {
-  final LastPlayedGame lastPlayedGame;
+  final Stocks lastPlayedGame;
   final double screenWidth;
   final double gameProgress;
   const LastPlayedGameTile(
@@ -27,7 +28,7 @@ class LastPlayedGameTile extends StatelessWidget {
                       children: <Widget>[
                         ClipRRect(
                           child: Image.asset(lastPlayedGame.imagePath,
-                              height: 65, width: 50, fit: BoxFit.cover),
+                              height: 65, width: 65, fit: BoxFit.cover),
                           borderRadius: BorderRadius.all(Radius.circular(8)),
                         ),
                         Positioned(
@@ -36,12 +37,12 @@ class LastPlayedGameTile extends StatelessWidget {
                           bottom: 0,
                           top: 0,
                           child: Container(
-                            decoration: BoxDecoration(
-                                shape: BoxShape.circle, color: Colors.white),
-                            child: Icon(
-                              Icons.play_arrow,
-                              color: Colors.red,
-                            ),
+                            // decoration: BoxDecoration(
+                            //     shape: BoxShape.circle, color: Colors.white),
+                            // child: Icon(
+                            //   Icons.play_arrow,
+                            //   color: Colors.red,
+                            // ),
                           ),
                         ),
                       ],
@@ -57,8 +58,13 @@ class LastPlayedGameTile extends StatelessWidget {
                             TextSpan(text: '\n'),
                             TextSpan(
                                 text:
-                                    '${lastPlayedGame.hoursPlayed} hours played',
-                                style: bodyTextStyle)
+                                    '${lastPlayedGame.hoursPlayed} SHARES',
+                                style: bodyTextStyle),
+                            TextSpan(text: '\n'),
+                            TextSpan(
+                                text:
+                                    lastPlayedGame.amount,
+                                style: amountTextStyle)
                           ],
                         ),
                       ),
